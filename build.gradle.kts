@@ -32,6 +32,8 @@ dependencies {
     compileOnly("tororo1066:base:$apiVersion")
     implementation("tororo1066:tororopluginapi:$apiVersion")
     compileOnly("com.mojang:brigadier:1.0.18")
+
+    implementation("net.kyori:adventure-text-serializer-legacy:4.25.0")
 }
 
 tasks.withType<ShadowJar> {

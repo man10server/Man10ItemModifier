@@ -1,5 +1,10 @@
-name: PluginName
-main: MainClass
+name: Man10ItemModifier
+main: tororo1066.man10itemmodifier.Man10ItemModifier
 version: '1.0'
-api-version: '1.19'
-loader: tororo1066.changeme.DependencyLoader
+api-version: '1.21'
+loader: tororo1066.man10itemmodifier.DependencyLoader
+
+dependencies:
+  server:
+    NMSUtils:
+      required: true

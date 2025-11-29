@@ -1,4 +1,4 @@
-package tororo1066.changeme;
+package tororo1066.man10itemmodifier;
 
 import tororo1066.tororopluginapi.AbstractDependencyLoader;
 import tororo1066.tororopluginapi.Library;
@@ -9,8 +9,6 @@ public class DependencyLoader extends AbstractDependencyLoader {
 
     @Override
     public Library[] getDependencies() {
-        return new Library[]{
-                LibraryType.KOTLIN.createLibrary()
-        };
+        return new Library[]{};
     }
 }
