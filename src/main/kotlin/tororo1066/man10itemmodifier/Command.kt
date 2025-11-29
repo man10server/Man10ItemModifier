@@ -34,7 +34,10 @@ class Command: SCommandV2("mim") {
     }
 
     private fun showModifyHelp(data: SCommandV2Data, modify: AbstractModify) {
-        data.sender.sendMessage(modify.longHelp())
+        val message = Man10ItemModifier.miniMessage.deserialize(
+            "<red>代用可能: ${modify.aliases.joinToString(", ")}\n"
+        ).append(modify.longHelp())
+        data.sender.sendMessage(message)
     }
 
     init {
